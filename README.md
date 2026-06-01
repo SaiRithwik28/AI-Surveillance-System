@@ -11,9 +11,9 @@ An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**,
 
 ## 📸 Demo / Screenshots
 
-> <img width="1920" height="983" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/35b5c487-e391-4389-99a9-64fbf3558ea0" />
-> <img width="1920" height="976" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/5282c929-d69c-4ca5-9807-b3cb293f4ab7" />
-> <img width="1920" height="972" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/7a73c3d5-e2c2-4f84-ab0f-11f628f75834" />
+<img width="1920" height="983" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/f8edb4df-a4cf-418c-8e67-654996cd9650" />
+<img width="1920" height="916" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/e8c303a5-83e0-4d83-9737-b6a90b0ceb86" />
+<img width="1920" height="913" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/2b6319da-ecb7-44f7-a0f6-8843cac94fd7" />
 
 ---
 
