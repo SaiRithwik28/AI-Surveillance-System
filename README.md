@@ -126,13 +126,12 @@ Live dashboard updates with charts and logs
 ---
 
 ## 🔮 Future Enhancements
-
-- [ ] 📧 Email alert system for intrusion notifications
-- [ ] 📱 SMS notifications using Twilio
-- [ ] 🧑 Face recognition integration
-- [ ] ☁️ Cloud database support (Firebase / AWS)
-- [ ] 🌐 Web deployment (Streamlit Cloud / Docker)
-- [ ] 🎥 Multi-camera surveillance support
+📧 Email alert system for intrusion notifications
+📱 SMS notifications using Twilio
+🧑 Face recognition integration
+☁️ Cloud database support (Firebase / AWS)
+🌐 Web deployment (Streamlit Cloud / Docker)
+🎥 Multi-camera surveillance support
 
 ---
 
