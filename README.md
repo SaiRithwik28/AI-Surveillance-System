@@ -1,78 +1,174 @@
 # 🔒 AI Smart Security & Intrusion Detection System
 
-An intelligent real-time surveillance system built using **YOLOv8, OpenCV, and Streamlit**. It detects objects from live webcam or uploaded videos, analyzes activity, and generates alerts with severity levels. The system also provides a live dashboard with analytics, logs, and event tracking.
+An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**, and **Streamlit**. It detects objects from live webcam or uploaded videos, analyzes activity, and generates alerts with severity levels — complete with a live analytics dashboard, detection logs, and event tracking.
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?style=flat-square&logo=streamlit)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-purple?style=flat-square)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?style=flat-square&logo=opencv)
 
 ---
 
-## 🚀 Features
+## 📸 Demo / Screenshots
 
-- 🎥 Real-time object detection using YOLOv8  
-- 📷 Supports both **webcam live feed and video upload**  
-- 🚶 Detects multiple objects (person, car, motorcycle, etc.)  
-- 🚨 Smart intrusion detection system  
-- ⚡ Severity classification (Low / Medium / High)  
-- 🖼️ Automatic screenshot capture during intrusion events  
-- 📊 Live analytics dashboard with charts  
-- 📁 Export detection logs (CSV / JSON)  
-- 🧹 Clear all data (logs + screenshots)  
-- 🎛️ Adjustable confidence threshold  
-- ⚡ Frame skipping for faster processing  
+> _Add a screenshot or screen recording of the live dashboard here_
 
 ---
 
-## 🛠️ Technologies Used
+## ✨ Features
 
-- Python  
-- Streamlit  
-- OpenCV (cv2)  
-- YOLOv8 (Ultralytics)  
-- Pandas  
-- NumPy  
-- Plotly  
+| Feature | Description |
+|---|---|
+| 🎥 Real-time Detection | Object detection using YOLOv8 on live webcam or uploaded video |
+| 🚨 Intrusion Detection | Smart detection with automatic screenshot capture |
+| ⚡ Severity Levels | Classifies alerts as Low / Medium / High |
+| 📊 Live Dashboard | Real-time analytics with charts and logs |
+| 🎛️ Adjustable Settings | Confidence threshold, frame skip, object filters |
+| 📁 Export Logs | Download detection logs as CSV or JSON |
+| 🖼️ Screenshot Gallery | Auto-captured intrusion images saved as evidence |
+| 🧹 Data Reset | Clear all logs and screenshots in one click |
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Core programming language |
+| Streamlit | Web dashboard and UI |
+| YOLOv8 (Ultralytics) | Real-time object detection model |
+| OpenCV | Video processing and frame handling |
+| Pandas | Detection log management |
+| NumPy | Numerical operations |
+| Plotly | Interactive charts and analytics |
 
 ---
 
 ## 📦 Installation
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/SaiRithwik28/ai-smart-surveillance-system.git
+cd ai-smart-surveillance-system
+```
+
+### 2. Create a virtual environment (recommended)
+```bash
 python -m venv venv
-pip install streamlit opencv-python ultralytics pandas numpy plotly
 
-▶️ Run the Project
+# Activate on Windows
+venv\Scripts\activate
+
+# Activate on Mac/Linux
+source venv/bin/activate
+```
+
+### 3. Install dependencies
+```bash
+pip install -r 
+```
+
+---
+
+## ▶️ Run the Project
+
+```bash
 streamlit run app.py
+```
 
-🧠 How It Works
-1.User selects input source (Webcam / Video Upload)
-2.YOLOv8 model processes each frame
-3.Selected objects are detected and counted
-4.Intrusion logic checks activity patterns
-5.Severity level is assigned based on rules
-6.Alerts are generated and stored
-7.Screenshots are saved for evidence
-8.Live dashboard updates in real time
+Then open your browser at `http://localhost:8501` or `http://192.168.31.216:850`
 
-📊 Dashboard Features
-1.Live video detection feed
-2.Intrusion counter
-3.Severity indicator
-4.Object detection statistics
-5.Detection logs table
-6.Alert timeline history
-7.Charts for analytics
+---
 
-📁 Output Files
-/screenshots → Saved intrusion images
-Detection logs → CSV / JSON export
+## 🧠 How It Works
 
-🔮 Future Enhancements
-1.📧 Email alert system for intrusion
-2.📱 SMS notifications using Twilio
-3.🧑 Face recognition integration
-4.☁️ Cloud database (Firebase / AWS)
-5.🌐 Web deployment (Streamlit Cloud / Docker)
-6.🎥 Multi-camera surveillance support
+```
+User selects input (Webcam / Video Upload)
+        ↓
+YOLOv8 processes each frame in real-time
+        ↓
+Selected objects detected and counted
+        ↓
+Intrusion logic checks activity patterns
+        ↓
+Severity level assigned (Low / Medium / High)
+        ↓
+Alert generated → Screenshot saved as evidence
+        ↓
+Live dashboard updates with charts and logs
+```
 
-⭐ Acknowledgements
-1.Ultralytics YOLOv8
-2.Streamlit
-3.OpenCV
-4.Plotly
+---
+
+## 📊 Dashboard Features
+
+1. **Live video feed** — annotated bounding boxes with labels
+2. **Intrusion counter** — total intrusions detected
+3. **Severity indicator** — real-time threat level
+4. **Object statistics** — count per object class
+5. **Detection log table** — timestamped history
+6. **Alert timeline** — severity-tagged alert feed
+7. **Analytics charts** — bar chart, pie chart, confidence over time
+
+---
+
+## 📁 Output Files
+
+```
+📁 project-root/
+├── screenshots/        ← Auto-saved intrusion images
+├── detection_report.csv   ← Exportable detection log
+└── detection_report.json  ← JSON format export
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- [ ] 📧 Email alert system for intrusion notifications
+- [ ] 📱 SMS notifications using Twilio
+- [ ] 🧑 Face recognition integration
+- [ ] ☁️ Cloud database support (Firebase / AWS)
+- [ ] 🌐 Web deployment (Streamlit Cloud / Docker)
+- [ ] 🎥 Multi-camera surveillance support
+
+---
+
+## 📋 Requirements
+
+```
+streamlit
+opencv-python
+ultralytics
+pandas
+numpy
+plotly
+```
+
+Install all at once:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 👤 Author
+
+**Maganti Sai Rithwik**
+📧 sunnysairithwik@gmail.com
+🔗 [GitHub](https://github.com/SaiRithwik28)
+
+---
+
+## ⭐ Acknowledgements
+
+- [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics)
+- [Streamlit](https://streamlit.io)
+- [OpenCV](https://opencv.org)
+- [Plotly](https://plotly.com)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE)
