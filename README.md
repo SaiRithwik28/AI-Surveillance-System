@@ -51,7 +51,7 @@ An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**,
 ### 1. Clone the repository
 ```bash
 git clone https://github.com/SaiRithwik28/AI-Surveillance-System.git
-cd AI_Surveillance_System
+cd AI-Surveillance-System
 ```
 
 ### 2. Create a virtual environment (recommended)
