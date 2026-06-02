@@ -11,7 +11,7 @@ An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**,
 
 ## 📸 Demo / Screenshots
 
-<img width="1920" height="983" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/f8edb4df-a4cf-418c-8e67-654996cd9650" />
+<img width="1920" height="927" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/fc07cba2-2517-4d6a-92ce-03cd13cfebf6" />
 <img width="1920" height="916" alt="Screenshot (4)" src="https://github.com/user-attachments/assets/e8c303a5-83e0-4d83-9737-b6a90b0ceb86" />
 <img width="1920" height="913" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/2b6319da-ecb7-44f7-a0f6-8843cac94fd7" />
 
@@ -135,11 +135,6 @@ ultralytics
 pandas
 numpy
 plotly
-```
-
-Install all at once:
-```bash
-pip install -r requirements.txt
 ```
 
 ---
