@@ -114,15 +114,6 @@ Live dashboard updates with charts and logs
 
 ---
 
-## 📁 Output Files
-
-```
-📁 project-root/
-├── screenshots/        ← Auto-saved intrusion images
-├── detection_report.csv   ← Exportable detection log
-└── detection_report.json  ← JSON format export
-```
-
 ---
 
 ## 🔮 Future Enhancements
