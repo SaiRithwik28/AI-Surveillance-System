@@ -75,7 +75,7 @@ pip install streamlit opencv-python ultralytics pandas numpy plotly
 ## ▶️ Run the Project
 
 ```bash
-streamlit run Smart.py
+streamlit run app.py
 ```
 
 Then open your browser at `http://localhost:8501` or `http://192.168.31.216:850`
