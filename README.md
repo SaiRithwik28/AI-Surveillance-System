@@ -1,11 +1,17 @@
 # 🔒 AI Smart Security & Intrusion Detection System
 
-An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**, and **Streamlit**. It detects objects from live webcam or uploaded videos, analyzes activity, and generates alerts with severity levels — complete with a live analytics dashboard, detection logs, and event tracking.
+An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**, and **Streamlit**. It detects objects from uploaded videos (webcam locally), analyzes activity, and generates alerts with severity levels — complete with a live analytics dashboard, detection logs, and event tracking.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?style=flat-square&logo=python)
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.x-red?style=flat-square&logo=streamlit)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-purple?style=flat-square)
 ![OpenCV](https://img.shields.io/badge/OpenCV-4.x-green?style=flat-square&logo=opencv)
+
+🔗 **[Live Demo](https://ai-surveillance-system-f42f.onrender.com)**
+
+> **Note:** The live demo supports **video upload only**. Live webcam input is available when running locally (see Installation) — cloud servers don't have a physical camera to access.
+>
+> The demo runs on a free-tier server, so it may take 30–60 seconds to wake up if it's been idle.
 
 ---
 
@@ -21,7 +27,7 @@ An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**,
 
 | Feature | Description |
 |---|---|
-| 🎥 Real-time Detection | Object detection using YOLOv8 on live webcam or uploaded video |
+| 🎥 Real-time Detection | Object detection using YOLOv8 on uploaded video (webcam supported locally) |
 | 🚨 Intrusion Detection | Smart detection with automatic screenshot capture |
 | ⚡ Severity Levels | Classifies alerts as Low / Medium / High |
 | 📊 Live Dashboard | Real-time analytics with charts and logs |
@@ -49,13 +55,13 @@ An intelligent real-time surveillance system built using **YOLOv8**, **OpenCV**,
 ## 📦 Installation
 
 ### 1. Clone the repository
-```bash
+\`\`\`bash
 git clone https://github.com/SaiRithwik28/AI-Surveillance-System.git
 cd AI-Surveillance-System
-```
+\`\`\`
 
 ### 2. Create a virtual environment (recommended)
-```bash
+\`\`\`bash
 python -m venv venv
 
 # Activate on Windows
@@ -63,29 +69,31 @@ venv\Scripts\activate
 
 # Activate on Mac/Linux
 source venv/bin/activate
-```
+\`\`\`
 
 ### 3. Install dependencies
-```bash
-pip install streamlit opencv-python ultralytics pandas numpy plotly
-```
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
 
 ---
 
 ## ▶️ Run the Project
 
-```bash
+\`\`\`bash
 streamlit run app.py
-```
+\`\`\`
 
-Then open your browser at https://ai-surveillance-system-f42f.onrender.com
+Then open your browser at `http://localhost:8501`
+
+To try the deployed version instead, visit the **[Live Demo](https://ai-surveillance-system-f42f.onrender.com)**.
 
 ---
 
 ## 🧠 How It Works
 
-```
-User selects input (Webcam / Video Upload)
+\`\`\`
+User uploads a video (or uses webcam locally)
         ↓
 YOLOv8 processes each frame in real-time
         ↓
@@ -98,7 +106,7 @@ Severity level assigned (Low / Medium / High)
 Alert generated → Screenshot saved as evidence
         ↓
 Live dashboard updates with charts and logs
-```
+\`\`\`
 
 ---
 
@@ -114,28 +122,26 @@ Live dashboard updates with charts and logs
 
 ---
 
----
-
 ## 🔮 Future Enhancements
 📧 Email alert system for intrusion notifications
 📱 SMS notifications using Twilio
 🧑 Face recognition integration
 ☁️ Cloud database support (Firebase / AWS)
-🌐 Web deployment (Streamlit Cloud / Docker)
 🎥 Multi-camera surveillance support
+🌐 Browser-based webcam support on the live demo (via WebRTC)
 
 ---
 
 ## 📋 Requirements
 
-```
+\`\`\`
 streamlit
-opencv-python
+opencv-python-headless
 ultralytics
 pandas
 numpy
 plotly
-```
+\`\`\`
 
 ---
 
