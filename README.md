@@ -78,7 +78,7 @@ pip install streamlit opencv-python ultralytics pandas numpy plotly
 streamlit run app.py
 ```
 
-Then open your browser at `http://localhost:8501` or `http://192.168.31.216:850`
+Then open your browser at https://ai-surveillance-system-f42f.onrender.com
 
 ---
 
